@@ -70,7 +70,7 @@ runs:
 
         $pkg_list = $packages.Split(' ', [System.StringSplitOptions]::RemoveEmptyEntries)
         if ($pkg_list.Count -gt 0) {
-            & $choco install $pkg_list -y --no-progress --source=cygwin
+            & $choco install $pkg_list -y --no-progress --source=cygwin --version=3.5.3
         }
       shell: pwsh
 
