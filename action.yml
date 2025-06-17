@@ -56,6 +56,7 @@ runs:
         $choco_params = @(
             'upgrade',
             'cygwin',
+            '--version=3.5.3',
             '-y',
             '--no-progress',
             "--package-parameters='/InstallDir:$install_dir'"
